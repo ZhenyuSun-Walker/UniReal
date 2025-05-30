@@ -1,0 +1,16 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <map
+    id="myMap"
+    style="width: 10%; height: 50rpx;"
+    latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    markers="{{markers}}"
+    show-location
+  ></map>
+  <view class="btn-group">
+    <button class="btn" bindtap="startWork">开始工作</button>
+    <button class="btn" bindtap="viewHotZone">配送热区图</button>
+    <button class="btn" bindtap="viewPersonalData">个人数据</button>
+  </view>
+</view>
